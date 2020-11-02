@@ -23,7 +23,6 @@ document.addEventListener("keyup", function(event){
         }
         guesses.push(getUserGuess())
         console.log(guesses)
-        console.log(numberInput.value)
         document.getElementById("user-input").value = ""
     }
 })
