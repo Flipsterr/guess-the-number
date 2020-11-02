@@ -1,6 +1,6 @@
 const message = document.getElementById("message")
 const numberInput = document.getElementById("user-input")
-const randomNumber = Math.round(Math.random()*100)
+const secretNumber = Math.floor(Math.random()*101)
 
 function getUserGuess() {
     return (parseInt(numberInput.value)) 
@@ -20,5 +20,6 @@ document.addEventListener("keyup", function(event){
         else{
             setMessage("Too low!")
         }
+        document.getElementById("user-input").value = ""
     }
 })
